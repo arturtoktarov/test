@@ -1,0 +1,80 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Синий фон и круг */
+.header {
+    background-color: #12617E;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* Стили для навигационного меню */
+nav {
+    background-color: #555555;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+nav a.active {
+    color: orange;
+}
+/* Стили для контента с вертикальными квадратами */
+.content {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: left;
+    padding: 40px;
+    background-color: #f4f4f4;
+    gap: 20px; /* Промежуток между квадратами */
+}
+
+.box {
+    width: 200px;
+    height: 200px; /* Квадратные блоки */
+    background-color: #ccc;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 18px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
